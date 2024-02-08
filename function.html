@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        function hello()
+        {
+            document.writeln("Hello all");
+        }
+        function hi(name,age){
+            if(name==""||age == "")
+            {
+                alert("enter name and age");
+                return;
+            }
+            document.write(name + " is "+age+"years old");
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="button" onclick="hello()" value="hello">
+    </form>
+    <form action="">
+        <input type="text" placeholder="Name" name="t1"><input type="number" placeholder="Age" name="t2"><input type="button" onclick="hi(t1.value,t2.value)" value="submit">
+    </form>
+</body>
+</html>

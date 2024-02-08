@@ -8,11 +8,19 @@
 <body>
     <script lang="javascript" type="text/javascript">
         var i;
-        var num = parseInt(prompt("Enter the number"))
-        for(i=1;i<=num;i++)
+        // var num = parseInt(prompt("Enter the number"))
+        // for(i=1;i<=num;i++)
+        // {
+        //     document.write(i+"<br>");
+        // }
+        var num= parseInt(prompt("Enter the num","Number"));
+        var count=0;
+        while(num>0)
         {
-            document.write(i+"<br>");
+            num=Math.trunc(num/10);
+            count++;
         }
+        document.write(count);
     </script>
 </body>
 </html>
