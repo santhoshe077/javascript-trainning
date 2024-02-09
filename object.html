@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tut={
+            "topic" : "js",
+            "mode" : "online",
+            "days":"6"
+        };
+        document.writeln("topic : "+ tut.topic+"<br>");
+        document.writeln("mode : "+ tut.mode+"<br>");
+        document.writeln("days : "+ tut.days+"<br>");
+        var txt="";
+        let x;
+        for( x in tut)
+        {
+            txt += tut[x]+", ";
+        }
+        document.writeln(txt);
+    </script>
+</body>
+</html>
